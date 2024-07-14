@@ -20,7 +20,6 @@ export default function Auth() {
                     <input type={"password"}/>
                 </div>
                 <button>Войти</button>
-                <button id={"reg"} onClick={return_to_reg}>Зарегестрироваться?</button>
             </form>
         </div>
     )
