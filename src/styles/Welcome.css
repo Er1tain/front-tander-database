@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+#root {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Welcome {
+    display: flex;
+    justify-content: center;
+    transition: 3.5s;
+}
+
+#logo {
+    background: url("../assets/images/svg/magnit.svg");
+    width: 600px;
+    height: 114px;
+
+}
