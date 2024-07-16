@@ -1,11 +1,10 @@
+import UserAction from '../API/UserAction';
 import '../styles/Auth.css';
 import {useNavigate} from "react-router-dom";
 
 export default function Auth() {
     const navigate = useNavigate();
-    const return_to_reg = ()=>{
-        navigate("/reg");
-    }
+    
 
     return (
         <div id="PageAuthForm">
@@ -19,7 +18,7 @@ export default function Auth() {
                     <label>Пароль</label>
                     <input type={"password"}/>
                 </div>
-                <button>Войти</button>
+                <button onClick={()=>UserAction.Auth(navigate)}>Войти</button>
             </form>
         </div>
     )
